@@ -1,13 +1,12 @@
 package com.example.proyectoIntegrador.persistence.entity;
 
-import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+
+
+import javax.persistence.*;
 
 @Entity
-@Getter
-@Setter
-@Embeddable
+
+
 public class Domicilio {
 
     @Id

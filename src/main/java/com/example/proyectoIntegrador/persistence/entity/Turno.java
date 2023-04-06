@@ -1,7 +1,8 @@
 package com.example.proyectoIntegrador.persistence.entity;
 
-import jakarta.persistence.*;
 
+
+import javax.persistence.*;
 import java.time.LocalDate;
 
 
@@ -12,11 +13,10 @@ public class Turno {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Integer id;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "paciente_id")
     private Paciente paciente;
-
-    @OneToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "odontologo_id")
     private Odontologo odontologo;
     @Column

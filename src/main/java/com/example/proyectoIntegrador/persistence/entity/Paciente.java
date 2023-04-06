@@ -1,11 +1,11 @@
 package com.example.proyectoIntegrador.persistence.entity;
 
-import jakarta.persistence.*;
-import jdk.jfr.Timestamp;
+
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 
+import javax.persistence.*;
 import java.time.LocalDate;
 
 
@@ -17,7 +17,6 @@ public class Paciente {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Integer id;
-
     @Column
     private String nombre;
     @Column
@@ -28,6 +27,9 @@ public class Paciente {
     @Column
     @CreationTimestamp
     private LocalDate fechaAlta;
+
+//    @OneToMany(mappedBy = "paciente")
+//    private List<Turno> turnos;
 
     public Paciente(){}
 

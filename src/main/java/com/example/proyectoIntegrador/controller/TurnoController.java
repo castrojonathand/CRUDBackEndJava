@@ -12,6 +12,7 @@ import java.util.logging.Logger;
 
 @RestController
 @RequestMapping("/turno")
+@CrossOrigin(origins = "http://localhost:8080")
 public class TurnoController {
 
     private static final org.apache.logging.log4j.Logger log = org.apache.logging.log4j.LogManager.getLogger(TurnoController.class);
@@ -50,8 +51,8 @@ public class TurnoController {
         turnoService.eliminarPorId(id);
 
         return ResponseEntity.ok("El turno se elimio no exito");
-
     }
+
 
 
 

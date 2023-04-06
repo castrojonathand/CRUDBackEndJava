@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestión Integral - Clínica Odontológica</title>
+    <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Gestión Integral - Clínica Odontológica</h1>
+            <div>
+                <button>Ingresar</button>
+                <button>Logearme</button>
+            </div>
+            
+        </nav>        
+    </header>
+    <!-------------------------------------------GESTION DE ODONTOLOGOS -------------------------------------------->
+    <div id="container">
+        <div>
+        <h2>Administracion de Odontologos</h2>
+        <button id="registrarOdontologo">Registrar</button>
+        <button id="modificarOdontologo">Modificar</button>
+        <button id="eliminarOdontologo"">Eliminar</button><br><br>
+        <div>
+            <form id="odontologo-form">
+                <!-- <label>Nombre:</label>
+                <input type="text" id="nombreOdontologo" name="Nombre"><br><br>
+
+                <label>apellido:</label>
+                <input type="text" id="apellidoOdontologo" name="Apellido"><br><br>
+
+                <label>Matricula:</label>
+                <input type="int" id="matricula" name="Matricula"><br><br>
+
+                <button   button type="submit" id="agregar">Agregar odontologo</button> -->
+            </form>
+        </div>
+        <h2>Odontologos existentes</h2>
+        <button id="listarOdontologos">Listar Odontologos</button>
+        <!------------------------------------------ GESTION DE TURNOS --------------------------------------------->
+        </div>
+        <div>
+            <h2>Administracion de Turnos</h2>
+            <button id="registrarTurno">Registrar</button>
+            <button id="modificarTurno">Modificar</button>
+            <button id="eliminarTurno"">Eliminar</button><br><br>
+            <div>
+                <form id="turno-form">
+                    <label>ID Paciente:</label>
+                    <input type="text" id="IdPaciente" name="IdPaciente"><br><br>
+            
+                    <label>ID Odontologo:</label>
+                    <input type="text" id="IdOdontologo" name="IdOdontologo"><br><br>
+            
+                    <label>Fecha del Turno:</label>
+                    <input type="datetime" id="fechaTurno" name="fechaTurno"><br><br>
+            
+                    <button type="submit" id="agregar">Agregar Turno</button>
+                </form>
+            </div>            
+            
+            <h2>Odontologos existentes</h2>           
+            <button id="listarTurnos">Listar Turnos</button>
+        </div>
+        <!---------------------------------------- GESTION DE PACIENTES ------------------------------------------->
+        <div>
+            <h2>Administracion de Pacientes</h2>
+            <button id="registrarPacientes">Registrar</button>
+            <button id="modificarPaciente">Modificar</button>
+            <button id="eliminarPaciente">Eliminar</button><br><br>
+            <div>
+                <form id="paciente-form">
+                    <label>Nombre:</label>
+                    <input type="text" id="nombrePaciente" name="Nombre"><br><br>
+            
+                    <label>apellido:</label>
+                    <input type="text" id="apellidoPaciente" name="Apellido"><br><br>
+            
+                    <label>Domicilio:</label>
+                    <div>
+                        <li><label>Calle:</label><input type="text" id="calle" name="calle"><br><br></li>
+                        <li><label>Numero:</label><input type="int" id="numero" name="numero"><br><br></li>
+                        <li><label>Localidad:</label><input type="text" id="localidad" name="localidad"><br><br></li>
+                        <li><label>Provincia:</label><input type="text" id="provincia" name="provincia"><br><br></li>
+                    </div>                        
+                    <label>Fecha de Alta:</label>
+                    <input type="date" id="fechaTurno" name="fechaTurno"><br><br>
+
+                    <button type="submit" id="agregar">Agregar Paciente</button>
+                </form>
+            </div>
+            
+            <h2>Pacientes existentes</h2>           
+            
+            
+        </div>
+    </div>
+    <!---------------------------------------------- TABLAS -------------------------------------------------------->
+    <div id="tablas">
+        <div id="tablaPaciente"></div>
+        <div id="tablaOdontologo"></div>
+    </div>
+
+    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+    <script src="./odontologo.js"></script>
+    <!-- <script src="./paciente.js"></script> -->
+</body>
+</html>

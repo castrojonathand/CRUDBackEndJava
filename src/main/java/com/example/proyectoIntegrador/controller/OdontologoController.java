@@ -12,12 +12,14 @@ import java.util.logging.Logger;
 
 @RestController
 @RequestMapping("/odontologo")
+@CrossOrigin(origins = "http://localhost:8080")
+
 public class OdontologoController {
 
     private static final org.apache.logging.log4j.Logger log = org.apache.logging.log4j.LogManager.getLogger(OdontologoController.class);
     @Autowired
     private OdontologoService odontologoService;
-    @PostMapping("/")
+    @PostMapping("")
     public ResponseEntity<String> registrarOdontologo(@RequestBody Odontologo odontologo){
 
         ResponseEntity<String> response = null;
@@ -31,7 +33,7 @@ public class OdontologoController {
 
         return response;
     }
-    @GetMapping("/")
+    @GetMapping("")
     public ResponseEntity<List<Odontologo>> listarOdontologos(){
 
         return ResponseEntity.ok(odontologoService.listar());
@@ -45,7 +47,7 @@ public class OdontologoController {
         return ResponseEntity.ok("Se elimino un odontologo");
     }
 
-    @PutMapping("/")
+    @PutMapping("")
     public ResponseEntity<String> modificarOdontologo(@RequestBody Odontologo odontologo){
 
             odontologoService.modificar(odontologo);

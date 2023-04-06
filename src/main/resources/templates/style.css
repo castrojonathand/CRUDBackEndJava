@@ -1,0 +1,72 @@
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: rgb(80, 77, 77);
+    padding: 0.2rem 
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+header h1 {
+    color: black;
+    margin: auto;
+}
+h2{
+    margin: 0;
+    padding: 0.83rem;
+}
+div{
+    text-align:center;
+}
+div form input{
+    align-self: flex-start;
+}   
+
+button{
+    padding: 0.5rem;
+    font-size: 0.83rem;
+
+}
+#agregar{
+        padding: 0.4rem;
+        font-size: 1rem;
+}
+#containerTurno{
+    background-color: rgb(171, 170, 170);
+    text-align: center;
+}
+#btnturno {
+    padding: 0.83rem;
+    text-align: center; 
+        
+}
+#container{
+    background-color: rgb(171, 170, 170);
+    display: flex;
+    justify-content: space-around;
+
+}
+#tablas{
+    background-color:aquamarine;
+}
+
+#odontologo-form,#paciente-form,#turno-form {
+    background-color: var(--negro);
+    max-width: 24rem;
+    margin: 0 auto;
+    padding: 0.2rem;
+    border-radius: 1rem;    
+}
+#idModificar{    
+    margin-left: 3rem;
+}
+#eliminarOdontologo,#modificarOdontologo,#registrarOdontologo{
+    
+    background-color: rgb(179, 179, 179);
+}

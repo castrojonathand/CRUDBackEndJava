@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gestión de turnos - Clínica Odontológica</title>
+    <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Gestión de turnos - Clínica Odontológica</h1>
+    </header>
+    <!-- <div id="wrapper"></div> -->    
+        <div id="containerTurno">
+            <h2>Agregar Turno</h2>
+            <form id="turno-form">
+                <label>Ingrese Paciente:</label>
+                <input type="text" id="agregarPaciente" name="agregarPaciente"><br><br>
+
+                <label>Ingrese Odontologo:</label>
+                <input type="text" id="agregarOdontologo" name="agregarOdontologo"><br><br>
+
+                <label>Ingrese fecha:</label>
+                <input type="int" id="fechaTurno" name="fechaTurno"><br><br>
+
+                <button type="submit" id="agregar">Agregar Turno</button>
+            </form>
+            <!-- Botones para mostrar, modificar y eliminar turnos -->
+            <h2>Turnos existentes</h2>
+            <button id="mostrarTurnos">Mostrar Turnos</button>            
+            <button id="eliminarTurno"">Eliminar Turno</button><br><br>
+        
+        </div>
+        
+    
+    <div id="tablas">        
+        <div id="tablaTurno"></div>
+        
+    </div>
+    <!-- Tabla donde lista los odontologos -->
+
+    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+    <script src="./odontologo2.js"></script>
+</body>
+
+</html>

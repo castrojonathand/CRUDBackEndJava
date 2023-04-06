@@ -14,13 +14,14 @@ import java.util.logging.Logger;
 
 @RestController
 @RequestMapping("/paciente")
+@CrossOrigin(origins = "http://localhost:8080")
 public class PacienteController {
 
     private static final org.apache.logging.log4j.Logger log = org.apache.logging.log4j.LogManager.getLogger(PacienteController.class);
     @Autowired
     private PacienteService pacienteService;
 
-    @PostMapping("/")
+    @PostMapping("")
     public ResponseEntity<String> agregarPaciente(@RequestBody Paciente paciente){
 
         ResponseEntity<String> response = null;
@@ -40,7 +41,7 @@ public class PacienteController {
         return response;
     }
 
-     @GetMapping("/")
+     @GetMapping("")
     public ResponseEntity<List<Paciente>> listarPacientes(){
 
         return ResponseEntity.ok(pacienteService.listar());
@@ -56,13 +57,18 @@ public class PacienteController {
 
      }
 
-    @PutMapping("/")
+    @PutMapping("")
     public ResponseEntity<String> modificarPaciente(@RequestBody Paciente paciente) throws NoSuchFieldException {
 
         pacienteService.modificar(paciente);
 
         return ResponseEntity.ok("El paciente se modifico correctamente");
     }
+
+
+
+
+
 
 
 

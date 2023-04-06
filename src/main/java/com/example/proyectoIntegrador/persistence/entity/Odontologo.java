@@ -1,13 +1,10 @@
 package com.example.proyectoIntegrador.persistence.entity;
 
-import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
-import org.springframework.beans.factory.annotation.Autowired;
+
+import javax.persistence.*;
+
 
 @Entity
-@Getter
-@Setter
 public class Odontologo {
 
     @Id
@@ -20,6 +17,8 @@ public class Odontologo {
     @Column
     private Integer matricula;
 
+//    @OneToMany(mappedBy = "odontologo")
+//    private List<Turno> turnos;
     public Odontologo() { }
 
     public Integer getId() {
