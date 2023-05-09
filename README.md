@@ -5,29 +5,29 @@ Paso a dejar asentado los endpoints y json para comprobar su funcionalidad con p
 
 CARGA DE UN PACIENTE: [POST]       http://localhost:8080/paciente/
 {
-    "nombre":"juan",
-    "apellido":"Perez",    
+    "nombre":"string",
+    "apellido":"string",    
     "domicilio":{        
-        "calle":"sallares",
-        "numero":"456",
-        "localidad":"varela",
-        "provincia":"Bs.As."
+        "calle":"string",
+        "numero":"integer",
+        "localidad":"string",
+        "provincia":"string"
     },
-    "fechaAlta":"2023-03-29" 
+    "fechaAlta":"YYYY-MM-DD" 
  }
 MODIFICAR UN PACIENTE:[PUT]        http://localhost:8080/paciente/
 {
-    "id":1,
-    "nombre":"juan",
-    "apellido":"Perez",    
+    "id": Integer,
+    "nombre":"string",
+    "apellido":"string",    
     "domicilio":{
-        "id":1,
-        "calle":"sallares",
-        "numero":"456",
-        "localidad":"varela",
-        "provincia":"Bs.As."
+        "id": Integer,
+        "calle":"string",
+        "numero":"Integer",
+        "localidad":"String",
+        "provincia":"String"
     },
-    "fechaAlta":"2023-03-29" 
+    "fechaAlta":"YYYY-MM-DD" 
  }
 OBTENER LISTA DE PACIENTES:[GET]   http://localhost:8080/paciente/
 ELIMINAR UN PACIENTE:[DELETE]      http://localhost:8080/paciente/{id}
