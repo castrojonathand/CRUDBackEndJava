@@ -3,6 +3,7 @@
 El proyecto se trata un CRUD para la gestion de una Clinica Odontologica
 
 CARGA DE UN PACIENTE: [POST]       http://localhost:8080/paciente/
+
 {
     "nombre":"string",
     "apellido":"string",    
@@ -14,6 +15,7 @@ CARGA DE UN PACIENTE: [POST]       http://localhost:8080/paciente/
     },
     "fechaAlta":"YYYY-MM-DD" 
  }
+ 
 MODIFICAR UN PACIENTE:[PUT]        http://localhost:8080/paciente/
 {
     "id": Integer,
