@@ -5,12 +5,15 @@ El proyecto se trata un CRUD para la gestion de una Clinica Odontologica
 CARGA DE UN PACIENTE: [POST]       http://localhost:8080/paciente/
 
 {
-     "nombre":"string",    
+    "nombre":"string",    
      "apellido":"string",     
      "domicilio":{        
         "calle":"string",
+        
         "numero":"integer",
+        
         "localidad":"string",
+        
         "provincia":"string"        
     },
     
