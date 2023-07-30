@@ -12,6 +12,7 @@ CARGA DE UN PACIENTE: [POST]       http://localhost:8080/paciente/
         "numero":"integer",
         "localidad":"string",
         "provincia":"string"
+        
     },
     "fechaAlta":"YYYY-MM-DD" 
  }
