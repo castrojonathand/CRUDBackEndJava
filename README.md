@@ -1,7 +1,6 @@
 ﻿# ProyectoIntegradorBackEndJava
 
-El proyecto se trata la gestion de una Clinica Odontologica donde tenemos como entidades Paciente, Odontologo y turnos. 
-Paso a dejar asentado los endpoints y json para comprobar su funcionalidad con postman si se requiere:
+El proyecto se trata un CRUD para la gestion de una Clinica Odontologica
 
 CARGA DE UN PACIENTE: [POST]       http://localhost:8080/paciente/
 {
