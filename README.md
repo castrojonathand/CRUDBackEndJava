@@ -1,6 +1,8 @@
 ﻿# CRUD BackEnd Java
 
-#El proyecto se trata un CRUD para la gestion de una Clinica Odontologica
+# El proyecto orientado para la gestion de una Clinica Odontologica
 
-#Documentacion en proceso....
+- Alta, modificación, actualización y eliminación de un paciente utilizando metodos de diseño escalables como patron MVC y seguridad con Spring Security.
+
+`Documentacion en proceso....`
 
