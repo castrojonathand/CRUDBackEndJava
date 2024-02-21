@@ -4,7 +4,7 @@
 
 - Alta, modificación, actualización y eliminación de un paciente utilizando
 - Diseños y patrones de desarrollo escalables como patron MVC y SOLID
-- seguridad con Spring Security.
+- Seguridad con Spring Security.
 
-`Documentacion en proceso....`
+`Documentacion detallada en proceso....`
 
