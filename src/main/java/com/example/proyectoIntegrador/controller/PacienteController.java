@@ -2,15 +2,15 @@ package com.example.proyectoIntegrador.controller;
 
 import com.example.proyectoIntegrador.persistence.entity.Paciente;
 import com.example.proyectoIntegrador.service.PacienteService;
-import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.time.format.DateTimeFormatter;
 import java.util.List;
-import java.util.logging.LogManager;
-import java.util.logging.Logger;
+
+// import lombok.SneakyThrows;
+// import java.time.format.DateTimeFormatter;
+// import java.util.logging.LogManager;
+// import java.util.logging.Logger;
 
 @RestController
 @RequestMapping("/paciente")

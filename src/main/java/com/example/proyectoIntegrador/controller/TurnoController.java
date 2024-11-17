@@ -7,8 +7,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.logging.LogManager;
-import java.util.logging.Logger;
+// import java.util.logging.LogManager;
+// import java.util.logging.Logger;
 
 @RestController
 @RequestMapping("/turno")
